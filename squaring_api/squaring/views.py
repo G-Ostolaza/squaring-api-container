@@ -7,3 +7,8 @@ from django.views import View
 class HelloWorldView(View):
     def get(self, request):
         return HttpResponse('Hello World')
+
+class SquaringView(View):
+    def square(self, request, number):
+        return HttpResponse(number ** 2)
+    
