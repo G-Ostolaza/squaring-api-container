@@ -9,6 +9,6 @@ class HelloWorldView(View):
         return HttpResponse('Hello World')
 
 class SquaringView(View):
-    def square(self, request, number):
+    def get(self, request, number):
         return HttpResponse(number ** 2)
     
